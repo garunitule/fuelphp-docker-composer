@@ -14,7 +14,7 @@
                 foreach ($tasks as $task) {
                     echo "<tr>";
                     echo "<td>" . $task['name'] . "</td>";
-                    echo "<td>" . $task["date"] . "</td>";
+                    echo "<td>" . $task["created_time"] . "</td>";
                     echo "<td>" . $task["status"] . "</td>";
                     echo "</tr>";
                 }

@@ -21,5 +21,19 @@
  */
 
 return array(
-
+    "type" => "mysqli",
+    "connection" => array(
+        "hostname" => "fuel_db",
+        "port" => "3306",
+        "database" => "fuelphp_sample",
+        "username" => "fuelphp_sample",
+        "password" => "fuelphp_sample_pw",
+        "persistent" => false,
+        "compress" => false,
+    ),
+    "identifier" => "`",
+    "table_prefix" => "",
+    "charset" => "utf8",
+    "enable_cache" => true,
+    "profiling" => false,
 );
