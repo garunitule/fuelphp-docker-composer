@@ -11,6 +11,12 @@ class Controller_Task extends Controller
 
     public function action_index()
     {
+        // TODO: 共通コントローラーに切り出す
+        // これは動作確認のためのログインチェック
+        // beforeメソッドにログインチェックを実装しておき、beforeメソッドを継承したコントローラーを作成する
+        if (!\Auth::check()) {
+            \Response::redirect('/');
+        }
         $tasks = [
             [
                 'name' => 'task 1',
